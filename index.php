@@ -1,9 +1,46 @@
-<!DOCTYPE html>
+<!DOCTYPE#0000FFl>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Cadastro de Usuário</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{    
+        background-color: blue;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #F6CEF5;
+        margin-left: 480px;
+
+        }
+        
+        #userForm{
+            display:flex;
+            flex-direction: column;
+            width: 500px;
+           
+        }
+        input{
+            width: 320px;
+            height:30px;
+            border-radius: 20px;
+        }
+        select{
+            width: 320px;
+            height:30px;
+            border-radius: 20px; 
+        }
+        button{
+            width: 320px;
+            height:30px;
+            border-radius: 20px; 
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
 </head>
 <body>
     <?php
@@ -39,6 +76,10 @@
         <button type="button" onclick="inserirUsuario()">Inserir</button>
         <button type="button" onclick="listarUsuarios()">Listar</button>
         <button type="button" onclick="limparForm()">Limpar</button>
+
+        <button type="button"><a href="remove.php">Remover</a></button>
+        
+        
     </form>
 
     <div id="listaUsuarios"></div>
